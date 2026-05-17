@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeArena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <h1>CodeArena</h1>
+            <p>Online coding judge for C++ challenges</p>
+        </div>
+        <div class="session">
+            <span id="activeUser">Guest</span>
+            <button id="logoutBtn" class="ghost hidden">Logout</button>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="panel auth-panel" id="authPanel">
+            <div class="tabs">
+                <button class="tab active" data-mode="login">Login</button>
+                <button class="tab" data-mode="register">Register</button>
+            </div>
+            <form id="authForm">
+                <label>
+                    Username
+                    <input id="username" type="text" minlength="3" required placeholder="student01">
+                </label>
+                <label>
+                    Password
+                    <input id="password" type="password" minlength="4" required placeholder="••••••">
+                </label>
+                <button type="submit" id="authSubmit">Login</button>
+                <p class="status" id="authStatus"></p>
+            </form>
+        </section>
+
+        <section class="panel problems-panel">
+            <div class="panel-head">
+                <h2>Problems</h2>
+                <button id="refreshBtn" class="ghost">Refresh</button>
+            </div>
+            <div id="problems" class="problem-list"></div>
+        </section>
+
+        <section class="panel editor-panel">
+            <div class="panel-head">
+                <div>
+                    <h2 id="selectedTitle">Select a problem</h2>
+                    <p id="selectedMeta">Choose a challenge from the list.</p>
+                </div>
+                <span id="selectedScore" class="score-pill">0 pts</span>
+            </div>
+            <article id="statement" class="statement"></article>
+            <label class="code-label">
+                Solution.cpp
+                <textarea id="code" spellcheck="false"></textarea>
+            </label>
+            <div class="actions">
+                <button id="loadTemplateBtn" class="ghost">Template</button>
+                <button id="submitBtn">Run & Submit</button>
+            </div>
+            <p class="status" id="submitStatus"></p>
+        </section>
+
+        <section class="panel leaderboard-panel">
+            <div class="panel-head">
+                <h2>Leaderboard</h2>
+            </div>
+            <div id="leaderboard" class="leaderboard"></div>
+        </section>
+
+        <section class="panel submissions-panel">
+            <div class="panel-head">
+                <h2>My Submissions</h2>
+            </div>
+            <div id="submissions" class="submissions"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

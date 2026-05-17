@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "short": "Find two numbers whose sum equals the target.",
+    "difficulty": "Easy",
+    "score": 100,
+    "statement": "Given n integers and a target value, print the 1-based indexes of any two different elements whose sum is equal to the target.",
+    "input": "First line contains n and target. Second line contains n integers.",
+    "output": "Print two indexes in increasing order. Print -1 if no pair exists.",
+    "sample": "Input\\n5 9\\n2 7 11 15 1\\n\\nOutput\\n1 2"
+  },
+  {
+    "id": 2,
+    "title": "Balanced Brackets",
+    "short": "Check whether brackets are properly nested.",
+    "difficulty": "Medium",
+    "score": 150,
+    "statement": "Given a string containing only parentheses, square brackets, and curly braces, determine whether every opening bracket is closed in the correct order.",
+    "input": "A single bracket string.",
+    "output": "Print YES if the string is balanced, otherwise print NO.",
+    "sample": "Input\\n{[()]}\\n\\nOutput\\nYES"
+  },
+  {
+    "id": 3,
+    "title": "Shortest Path",
+    "short": "Compute shortest distance in an unweighted graph.",
+    "difficulty": "Hard",
+    "score": 200,
+    "statement": "Given an undirected unweighted graph and two nodes s and t, find the minimum number of edges needed to travel from s to t.",
+    "input": "First line contains n, m, s, t. The next m lines contain edges u v.",
+    "output": "Print the shortest distance, or -1 if t is unreachable.",
+    "sample": "Input\\n5 4 1 5\\n1 2\\n2 3\\n3 5\\n1 4\\n\\nOutput\\n3"
+  }
+]

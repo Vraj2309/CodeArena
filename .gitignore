@@ -1,0 +1,27 @@
+# Build outputs
+backend/build/
+*.exe
+*.obj
+*.o
+*.dll
+*.a
+
+# Runtime/generated files
+submissions/
+server.pid
+server.log
+server.err
+
+# Local user/submission data
+data/users.txt
+data/submissions.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor/system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
